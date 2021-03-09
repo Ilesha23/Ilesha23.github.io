@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
 body{
 	margin: 0 auto;
 	padding: 0;
-	overflow: hidden;
 }
+
 h1, h2, h3, p{
 	margin: 0 auto;
 	padding: 0;
 }
 
 .first_bg{
-	background-image: url(images/bg1.jpg);
+	background-image: url(images/bg2.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	display: block;
@@ -20,15 +39,36 @@ h1, h2, h3, p{
 	color: white;
 }
 
+.logo{
+	width: 5%;
+	margin: 1.5% 0 0 8%;
+	padding: 0;
+	font-family: 'Righteous', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+}
+
+.phone{
+	display: inline;
+	position: absolute;
+	margin: 1.5% 0 0 80%;
+	font-size: 20px;
+	color: #DAA520;
+	font-family: 'Righteous', cursive;
+}
+
 h1{
-	padding-top: 200px;
+	padding-top: 150px;
 	text-align: center;
 	font-size: 50px;
 	width: 70%;
+	font-family: 'Righteous', cursive;
+	font-weight: normal;
 }
 
 .first_text{
-	font-family: 'PT Sans Caption', sans-serif;
+	font-family: 'Righteous', cursive;
 	font-size: 25px;
 	margin: 50px auto 35px;
 	text-align: center;	
@@ -46,6 +86,8 @@ h1{
 	display: inline-block;
 	position: relative;
 	vertical-align:auto;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .rectangle_third{
 	display: inline-block;
@@ -56,15 +98,22 @@ h1{
 	margin-top: -150px;
 }
 .number{
-	margin: 15px 62%;
+	margin: 15px 65%;
 	text-align: center;
 	font-size: 50px;
-	font-family: 'Osvald', sans-serif;
+	font-family: 'Righteous', cursive;
+}
+.number_one{
+	margin: 15px 80%;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Righteous', cursive;
 }
 .rect_text{
-	font-family: 'PT Sans Caption', sans-serif;
+	font-family: 'Righteous', cursive;
 	font-size: 20px;
 	text-align: center;
 	width: 100%;
 	margin: 0 50%;
 }
+
