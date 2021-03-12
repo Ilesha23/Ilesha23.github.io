@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=PT+Sans+Caption&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap');
 
 ::-webkit-scrollbar {
   width: 0.5vw;
@@ -22,17 +23,22 @@
 body{
 	margin: 0 auto;
 	padding: 0;
-	font-family: 'Righteous', cursive;
+	
 	overflow-x: hidden;
 }
 
-h1, h2, h3, p, div{
+h2, h3, p, div{
 	margin: 0 auto;
 	padding: 0;
 }
 
 
+
 /*********************FIRST SCREEN*********************/
+.font{
+  font-family: 'Comfortaa', cursive;
+}
+
 .first_bg{
 	background-image: url(images/bg2.jpg);
 	background-repeat: no-repeat;
@@ -58,7 +64,7 @@ h1, h2, h3, p, div{
 }
 
 .phone{
-	display: inline;
+	display: inline-block;
 	position: absolute;
 	margin: 1.5% 0 0 80%;
 	font-size: 20px;
@@ -67,6 +73,8 @@ h1, h2, h3, p, div{
 }
 
 h1{
+	margin: 0 auto;
+	padding: 0;
 	padding-top: 150px;
 	text-align: center;
 	font-size: 50px;
@@ -143,6 +151,7 @@ h1{
 }
 
 .pages{
+  font-family: 'Righteous', cursive;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -183,7 +192,7 @@ h1{
 	width: 88vw;
 	height: 100vh;
 	padding-left: 6vw;
-	padding-right: 8vw;
+	padding-right: 6vw;
 }
 
 
@@ -197,18 +206,26 @@ h1{
 }
 
 .SecondHeader{
+  background-image: url(images/second.jpg);
+  background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+  font-family: 'Comfortaa', cursive;
 	width: 32.1vw;
+	
 }
 .SecondHeaderHeader{
 	font-size: 300%;
-	margin: 45% 0 0 0;
+	margin: 35% 0 0 0;
 }
 
 .SecondText{
+  font-family: 'Comfortaa', cursive;
 	width: 67.9vw;
+	font-weight: bold;
 }
 .SecondTextText{
-	margin: 16% 10% 0 0;
+	margin: 16% 6% 0 6%;
 	font-size: 120%;
 }
 
@@ -217,6 +234,8 @@ h1{
 
 
 .SecondWrapperTwo{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
 	max-width: 93vw;
 	height: 34.7vh;
 	display: flex;
@@ -227,9 +246,7 @@ h1{
 	width: 29.9vw;
 	padding-top: 1%;
 }
-.SecondStartHeader{
 
-}
 
 
 .SecondPromotion{
@@ -242,6 +259,7 @@ h1{
 .SecondPromotionHeader{
 	padding-left: 10%;
 	margin-top: 3%;
+	font-weight: 700;
 }
 .SecondPromotionText{
 	padding-left: 10%;

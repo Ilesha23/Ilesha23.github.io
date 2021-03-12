@@ -5,6 +5,16 @@
 	<meta charset="UTF-8" name="viewport" content="width=1000">
 	<title>Ensemble Mriya</title>
 	<link rel="stylesheet" href="main.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FP75RV1DQZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FP75RV1DQZ');
+</script>
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -16,13 +26,15 @@
 		<div class="first">
 			
 			<p class="logo">MRIYA</p>
-			<p class="phone">+38(099)9385629</p>
+			<p class="phone">+38(063)2426879</p>
 			<div class="qqq">
 			<h1>Ensemble Mriya</h1>
 
 			<div class="first_text">
+			<span class="font">
 			<p>Образцовый ансамбль танца "МРІЯ"</p>
 			<p>Зразковий ансамбль танцю "Мрія"</p>
+			</span>
 			<p>Website is under construction...</p>
 			</div>
 			</div>
@@ -62,7 +74,7 @@
 
 	<div class="pages">
 		<div class="MainLink Link">
-			<a href="#" class="To ToMain">
+			<a href="#main" class=" scrollto To ToMain">
 				Main
 			</a>
 		</div>
@@ -98,18 +110,18 @@
 
 
 <!--------------------------SECOND SCREEN--------------------------->
-
-<div class="second">
+<div class="second" id="main">
 
 	<div class="SecondWrapperOne">
 		<div class="SecondHeader">
 			<p class="SecondHeaderHeader">
-				Studio
+				<!--Mriya in my heart forever-->
 			</p>
 		</div>
 		<div class="SecondText">
 			<p class="SecondTextText">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sed minima excepturi vero officiis facere voluptas quis sapiente quos. Esse tenetur eaque culpa ipsam vel quaerat suscipit excepturi corporis, recusandae dolor aperiam laudantium, adipisci placeat maiores beatae cupiditate ut quidem voluptates asperiores. Aspernatur quo, recusandae quibusdam doloremque hic, dignissimos rerum!
+				 Образцовый ансамбль танца "МРІЯ" был основан в 1988 году. Ансамбль является обладателем Гран При, призером и лауреатом многочисленных Международных и Всеукраинских конкурсов и фестивалей. За время своего существования коллектив побывал во многих странах мира, среди них Польша, Венгрия, Чехия, Россия, Турция, Мексика, Франция, Алжир и др.
+
 			</p>
 		</div>
 	</div>
@@ -129,10 +141,10 @@
 		<div class="SecondPromotion">
 			<img src="images/mobile.png" alt="" class="SecondPromotionImg">
 			<p class="SecondPromotionHeader">
-				Promotion
+				 Родителям
 			</p>
 			<p class="SecondPromotionText">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil provident vero dolores nam ea quaerat aspernatur vel enim aliquid fuga dignissimos voluptatem, cupiditate illum, odit fugiat eligendi.
+		Приглашаем детей 4-13 лет в хореографическую студию Образцового ансамбля танца "Мрія" Дворца культуры Червонозаводского района. Ждем Вас по адресу: ст.м. Гагарина, пл.Руднева, 19 А (пл. Героев Небесной Сотни, 19 А).  
 			</p>
 		</div>
 
@@ -142,7 +154,7 @@
 				Help
 			</p>
 			<p class="SecondHelpText">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis reiciendis, cupiditate amet aliquam, enim officiis expedita harum beatae ullam saepe excepturi.
+			 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis reiciendis, cupiditate amet aliquam, enim officiis expedita harum beatae ullam saepe excepturi.
 			</p>
 
 		</div>
@@ -160,6 +172,15 @@
 
 
 
-
+<script>
+jQuery(document).ready(function() {
+jQuery("a.scrollto").click(function () {
+elementClick = jQuery(this).attr("href")
+destination = jQuery(elementClick).offset().top;
+jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+return false;
+});
+});
+</script>
 </body>
 </html>
